@@ -1,6 +1,6 @@
 # 🎬 WAMA Player (React + Boostrap + React Player)
 
-WAMA Player is a modern video player project built using **React**, **TypeScript**, and **TailwindCSS**.  
+WAMA Player is a modern video player project built using **React**, **Boostrap**, and **React Player**.  
 It supports playing local MP4 videos with controls like play/pause, next/previous, and fullscreen.
 
 ---
@@ -8,8 +8,7 @@ It supports playing local MP4 videos with controls like play/pause, next/previou
 ## 🚀 Features
 
 - 🎥 Custom video player built with React hooks
-- 💡 TypeScript for strong typing
-- 💅 TailwindCSS for responsive design
+- 💅 Boostrap for responsive design
 - ⏯️ Play, pause, next, and previous controls
 - 🧭 Fullscreen support
 - ⚡ Fast and optimized build
@@ -20,7 +19,7 @@ It supports playing local MP4 videos with controls like play/pause, next/previou
 
 - React 18+
 - bootstrap v5
-- React Plyer
+- React Player
 
 ---
 
@@ -35,7 +34,7 @@ It supports playing local MP4 videos with controls like play/pause, next/previou
 2. **Navigate to the project folder:**
 
    ```bash
-   cd WAMA-Player
+   cd wama-player-react-player
    ```
 
 3. **Install dependencies:**
@@ -61,13 +60,11 @@ WAMA-Player/
 │   └── favicon.ico
 ├── src/
 │   ├── components/
-│   │   └── Player.tsx
-│   ├── App.tsx
-│   ├── main.tsx
+│   │   └── WamaPlayerReact.js
+│   ├── App.js
+│   ├── main.js
 │   └── index.css
 ├── package.json
-├── tailwind.config.ts
-├── tsconfig.json
 └── README.md
 ```
 
