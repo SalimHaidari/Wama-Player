@@ -1,4 +1,4 @@
-# 🎬 WAMA Player (React + TypeScript + Tailwind)
+# 🎬 WAMA Player (React + Boostrap + React Player)
 
 WAMA Player is a modern video player project built using **React**, **TypeScript**, and **TailwindCSS**.  
 It supports playing local MP4 videos with controls like play/pause, next/previous, and fullscreen.
