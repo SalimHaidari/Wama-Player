@@ -1,70 +1,111 @@
-# Getting Started with Create React App
+# 🎬 WAMA Player (React + TypeScript + Tailwind)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+WAMA Player is a modern video player project built using **React**, **TypeScript**, and **TailwindCSS**.  
+It supports playing local MP4 videos with controls like play/pause, next/previous, and fullscreen.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+- 🎥 Custom video player built with React hooks
+- 💡 TypeScript for strong typing
+- 💅 TailwindCSS for responsive design
+- ⏯️ Play, pause, next, and previous controls
+- 🧭 Fullscreen support
+- ⚡ Fast and optimized build
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🧩 Tech Stack
 
-### `npm test`
+- React 18+
+- bootstrap v5
+- React Plyer
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 📦 Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone the repository:**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   git clone https://github.com/SalimHaidari/WAMA-Player.git
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **Navigate to the project folder:**
 
-### `npm run eject`
+   ```bash
+   cd WAMA-Player
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. **Install dependencies:**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   npm install
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. **Run the development server:**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```bash
+   npm start
+   ```
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📁 Project Structure
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+WAMA-Player/
+├── public/
+│   ├── videos/        # Place your own MP4 files here (not included in repo)
+│   └── favicon.ico
+├── src/
+│   ├── components/
+│   │   └── Player.tsx
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── index.css
+├── package.json
+├── tailwind.config.ts
+├── tsconfig.json
+└── README.md
+```
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🧹 .gitignore
 
-### Analyzing the Bundle Size
+This project ignores **node_modules** and **video files** to reduce repository size.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```gitignore
+# dependencies
+node_modules/
 
-### Making a Progressive Web App
+# local environment
+.env
+.DS_Store
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+# build output
+dist/
 
-### Advanced Configuration
+# videos
+public/videos/
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 🖥️ Build for Production
 
-### Deployment
+```bash
+npm run build
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 💌 Author
 
-### `npm run build` fails to minify
+Developed by: Salim Haidari
+email: salimhaidari1995@gmail.com
+🌐 GitHub:(https://github.com/SalimHaidari)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## 📜 License
+
+This project is open-source and available under the [MIT License](LICENSE).

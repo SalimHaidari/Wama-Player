@@ -15,10 +15,8 @@ const WamaPlayerReact = () => {
       title: "video 2",
       src: "https://www.youtube.com/watch?v=93Z8h93TKzk&list=RD93Z8h93TKzk&start",
     },
-    { title: "video 3", src: "/video3.mp4" },
-    { title: "video 4", src: "/video4.mp4" },
   ];
-  const [currentIndex, setCurrentIndex] = useState(2);
+  const [currentIndex, setCurrentIndex] = useState(0);
   // Helper to go to next / previous video
   const handleNext = () => {
     setCurrentIndex((prev) => (prev + 1) % playlist.length);
@@ -29,9 +27,7 @@ const WamaPlayerReact = () => {
 
   return (
     <div className="container text-center my-5">
-      <h2 className="mb-4 fw-bold">
-        🎥 React Player — Advanced Built-in Features
-      </h2>
+      <h2 className="mb-4 fw-bold">🎥 Wama-Player</h2>
 
       <div className="ratio ratio-16x9 shadow-lg border rounded">
         <ReactPlayer

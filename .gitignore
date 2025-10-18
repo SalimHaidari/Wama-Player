@@ -21,3 +21,13 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# custom additions
+# ignore videos folder (you can adjust path)
+public/videos/
+src/videos/
+
+# optional: IDE and OS-specific junk
+.vscode/
+.idea/
+Thumbs.db
