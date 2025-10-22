@@ -2,21 +2,20 @@ import { useState } from "react";
 import ReactPlayer from "react-player";
 
 const WamaPlayerReact = () => {
-  const handleReady = () => console.log("✅ Player is ready!");
-  const handlePlay = () => console.log("▶️ Video started");
-  const handlePause = () => console.log("⏸️ Video paused");
-  const handleEnded = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % playlist.length);
-  };
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   const playlist = [
-    { title: "video 2", src: "/video1.mp4" },
+    { title: "video 2", src: "videos/video1.mp4" },
     {
       title: "video 2",
-      src: "https://www.youtube.com/watch?v=93Z8h93TKzk&list=RD93Z8h93TKzk&start",
+      src: "https://www.youtube.com/watch?v=KLuTLF3x9sA",
+    },
+    {
+      title: "video 2",
+      src: "https://www.youtube.com/watch?v=xeXV1KoX034",
     },
   ];
-  const [currentIndex, setCurrentIndex] = useState(0);
+
   // Helper to go to next / previous video
   const handleNext = () => {
     setCurrentIndex((prev) => (prev + 1) % playlist.length);
@@ -24,14 +23,20 @@ const WamaPlayerReact = () => {
   const handlePrev = () => {
     setCurrentIndex((prev) => (prev === 0 ? playlist.length - 1 : prev - 1));
   };
+  const handleReady = () => console.log("✅ Player is ready!");
+  const handlePlay = () => console.log("▶️ Video started");
+  const handlePause = () => console.log("⏸️ Video paused");
+  const handleEnded = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % playlist.length);
+  };
 
   return (
     <div className="container text-center my-5">
-      <h2 className="mb-4 fw-bold">🎥 Wama-Player</h2>
+      <h2 className="mb-4 fw-bold"> Wama-Player</h2>
 
       <div className="ratio ratio-16x9 shadow-lg border rounded">
         <ReactPlayer
-          src={`/videos/${playlist[currentIndex].src}`}
+          src={playlist[currentIndex].src}
           controls
           playing
           muted
